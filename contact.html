@@ -1,0 +1,42 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Braynio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Braynio</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#tools">Tools</a>
+      <a href="blog.html">Blog</a>
+      <span id="authLinks"></span>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2 class="form-title">Contact Us</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="contactEmail">Email</label>
+        <input type="email" id="contactEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" required></textarea>
+      </div>
+      <button type="submit" class="btn glow" style="width:100%">Send Message</button>
+    </form>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="contact.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
