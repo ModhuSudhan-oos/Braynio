@@ -1,0 +1,44 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Braynio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Braynio</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <span id="authLinks">
+        <a href="login.html">Login</a>
+      </span>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2 class="form-title">Create Account</h2>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="signupEmail">Email</label>
+        <input type="email" id="signupEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="signupPassword">Password (min 6 characters)</label>
+        <input type="password" id="signupPassword" minlength="6" required>
+      </div>
+      <button type="submit" class="btn glow" style="width:100%">Sign Up</button>
+    </form>
+    <p style="text-align:center; margin-top:1rem">
+      Already have an account? <a href="login.html">Login</a>
+    </p>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
