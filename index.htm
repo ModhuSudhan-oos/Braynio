@@ -1,0 +1,76 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braynio - Discover Futuristic SaaS Tools</title>
+  <meta name="description" content="Explore cutting-edge AI tools to boost your productivity and transform your workflow">
+  <meta name="keywords" content="AI tools, SaaS, productivity, software directory">
+  <meta property="og:title" content="Braynio - Next-Gen Tools Directory">
+  <meta property="og:description" content="Discover the future of work with our curated collection of AI-powered tools">
+  <meta property="og:image" content="https://braynio.com/images/og-image.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8WE56VM8X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S8WE56VM8X');
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">Braynio</div>
+    <nav>
+      <a href="#tools">Tools</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <span id="authLinks">
+        <a href="login.html">Login</a>
+        <a href="signup.html" class="btn">Sign Up</a>
+      </span>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <lottie-player 
+      id="lottie-bg"
+      src="https://assets1.lottiefiles.com/packages/lf20_sk5h1kfn.json" 
+      background="transparent" 
+      speed="1" 
+      loop autoplay>
+    </lottie-player>
+    
+    <h1 id="heroText">Discover AI Tools</h1>
+    <p>The most comprehensive directory of futuristic SaaS tools to transform your workflow</p>
+    <a href="#tools" class="btn glow">Explore Tools</a>
+  </section>
+
+  <h2 class="section-title" id="tools">Featured Tools</h2>
+  <div id="toolsGrid" class="animate-on-scroll"></div>
+
+  <footer>
+    <div class="logo">Braynio</div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+    <p>&copy; 2023 Braynio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="auth.js"></script>
+  <script src="tools.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
